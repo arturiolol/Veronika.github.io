@@ -24,8 +24,8 @@ function createMagic(word){
 
 
 btn.addEventListener('click' , () => {
-    const activateInterval = setInterval(randomWord, 200)
+    const activateInterval = setInterval(randomWord, 150)
 
-    setTimeout(() => {clearInterval(activateInterval)}, 1000)
+    setTimeout(() => {clearInterval(activateInterval)}, 2500)
 })
 
