@@ -3,7 +3,7 @@ const btn = document.querySelector('.btn')
 const textArea = document.querySelector('.textarea')
 
 
-const words = ['Возможно', 'Частично', 'Невозможно', "Не стоит", 'Трагедия', 'Счастье', 'Истина',]
+const words = ['Возможно', 'Частично', 'Невозможно','Истина','нет','да','не ясно']
 const magic = document.createElement('h2')
 
 function randomWord(){
@@ -27,6 +27,5 @@ btn.addEventListener('click' , () => {
     const activateInterval = setInterval(randomWord, 200)
 
     setTimeout(() => {clearInterval(activateInterval)}, 1000)
-    textArea.value = ''
 })
 
